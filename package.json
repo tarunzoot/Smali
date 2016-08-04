@@ -1,0 +1,26 @@
+{
+    "name": "smali",
+    "displayName": "SmaliSyntax",
+    "description": "Syntax Highlighting For Smali Files",
+    "version": "0.0.1",
+    "publisher": "Rulebreaker",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "smali",
+            "aliases": ["Smali", "smali"],
+            "extensions": [".smali"],
+            "configuration": "./smali.configuration.json"
+        }],
+        "grammars": [{
+            "language": "smali",
+            "scopeName": "source.smali",
+            "path": "./syntaxes/smali.tmLanguage"
+        }]
+    }
+}
